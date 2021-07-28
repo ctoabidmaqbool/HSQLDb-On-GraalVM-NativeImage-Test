@@ -11,6 +11,13 @@ Read about this sample [here](https://docs.gluonhq.com/#_hellofx). This project 
 We use [GluonFX plugin](https://docs.gluonhq.com/) to build a native image for platforms including desktop and android.
 Please follow the prerequisites as stated [here](https://docs.gluonhq.com/#_requirements).
 
+### To install [hsqldb-2.6.0-jdk6.jar](http://www.hsqldb.org/download/hsqldb_260_jdk6/hsqldb-2.6.0-jdk6.jar) on local maven repository
+
+In root project folder e.g. `HSQLDb-On-GraalVM-NativeImage-Test` execute below command in terminal.
+
+    mvn install:install-file -Dfile=lib/hsqldb-2.6.0-jdk6.jar -DgroupId=org.hsqldb -DartifactId=hsqldb -Dversion=2.6.0-jdk6 -Dpackaging=jar
+This jar file e.g.  is located under [lib](https://github.com/ctoabidmaqbool/HSQLDb-On-GraalVM-NativeImage-Test/tree/main/lib) folder in root project folder.
+
 ### Desktop
 
 Run the application on JVM/HotSpot:
