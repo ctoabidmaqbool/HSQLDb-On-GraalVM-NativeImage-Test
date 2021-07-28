@@ -47,4 +47,18 @@ Run the installed app on a connected android device:
 
     mvn gluonfx:nativerun -Pandroid
 
+## Other Info:
+
+Common log files:
+
+    /target/gluonfx/log/
+
+Windows log files:
+
+    /target/gluonfx/x86_64-windows/gvm/log/
+
+Android log files:
+
+    /target/gluonfx/aarch64-android/gvm/log/
+
 **Let me know for more info / any problem you faced.**
