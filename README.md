@@ -68,4 +68,8 @@ Android log files:
 
     /target/gluonfx/aarch64-android/gvm/log/
 
+## Issues:
+
+- [HSQLDb not working on Android with GraalVM (gluonfx-maven-plugin)](https://github.com/ctoabidmaqbool/HSQLDb-On-GraalVM-NativeImage-Test/issues/1)
+
 **Let me know for more info / any problem you faced.**
