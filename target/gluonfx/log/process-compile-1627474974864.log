@@ -1,0 +1,33 @@
+Process
+=======
+compile
+
+Command Line
+============
+D:\Programs\graalvm-svm-windows-gluon-21.2.0-dev\bin\native-image.cmd "-Djdk.internal.lambda.eagerlyInitialize=false" --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout "-H:DeadlockWatchdogInterval=0" -H:+RemoveSaturatedTypeFlows "--features=org.graalvm.home.HomeFinderFeature" "-H:TempDirectory=D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\tmp" "-H:EnableURLProtocols=http,https" "-H:ReflectionConfigurationFiles=D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\reflectionconfig-x86_64-windows.json" "-H:JNIConfigurationFiles=D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\jniconfig-x86_64-windows.json" "-H:ResourceConfigurationFiles=D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\resourceconfig-x86_64-windows.json" "-H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle" "-Dsvm.platform=org.graalvm.nativeimage.Platform$WINDOWS_AMD64" -cp "D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\tmp\classpathJar.jar" com.maqboolsolutions.hsqldbgraalvmtest.Main
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]    classlist:   9,155.50 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]        (cap):  11,015.33 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]        setup:  16,897.46 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]     (clinit):   2,334.96 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]   (typeflow):  50,573.55 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]    (objects):  39,805.76 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]   (features):   5,163.20 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]     analysis: 100,181.60 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]     universe:   5,483.18 ms,  4.32 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]      (parse):  17,669.73 ms,  5.28 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]     (inline):  16,129.68 ms,  5.13 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]    (compile):  54,033.95 ms,  5.39 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]      compile:  94,222.97 ms,  5.39 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]        image:   9,798.99 ms,  5.36 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]        write:   4,039.56 ms,  5.36 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:12896]      [total]: 240,949.99 ms,  5.36 GB
+# Printing build artifacts to: D:\NetBeansProjects\git-projects\HSQLDb-On-GraalVM-NativeImage-Test\target\gluonfx\x86_64-windows\gvm\HSQLDbOnGraalVMNativeImageTest\com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+
+
+Result
+======
+result: 0
