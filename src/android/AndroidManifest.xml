@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     
-    <application android:label='HSQLDbOnGraalVMNativeImageTest' android:icon="@mipmap/ic_launcher">
+    <application android:label='HSQLDbOnGraalVMNativeImageTest' android:icon="@mipmap/ic_launcher" android:requestLegacyExternalStorage="true">
         <activity android:name='com.gluonhq.helloandroid.MainActivity' android:configChanges="orientation|keyboardHidden">
              <intent-filter>
                 <category android:name='android.intent.category.LAUNCHER'/>

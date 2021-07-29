@@ -5480,3 +5480,726 @@ And please check https://docs.gluonhq.com/ for more information.
 [Thu Jul 29 15:03:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(12248): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_LinearGradient_PAD.frag[0m
 [Thu Jul 29 15:03:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(12248): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
 [Thu Jul 29 15:03:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(12248): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(12248): onPause[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(12248): Dispatching lifecycle event from native Dalvik layer: pause[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(12248): Call Attach method from native Lifecycle: pause[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(12248): ATTACH_DALVIK, tid = 12248, existed? 1, dalvikEnv at 0x76445a03c0[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(12248): DETACH_DALVIK, tid = 12248, existed = 1, env at 0x76445a03c0[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(12248): called Attach method from native Lifecycle done[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(12248): onStop[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(12248): Dispatching lifecycle event from native Dalvik layer: stop[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(12248): Call Attach method from native Lifecycle: stop[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(12248): ATTACH_DALVIK, tid = 12248, existed? 1, dalvikEnv at 0x76445a03c0[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(12248): DETACH_DALVIK, tid = 12248, existed = 1, env at 0x76445a03c0[0m
+[Thu Jul 29 15:13:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(12248): called Attach method from native Lifecycle done[0m
+[Thu Jul 29 15:16:13 PKT 2021][FINE] Result for log: 130
+[Thu Jul 29 15:16:28 PKT 2021][INFO] ==================== COMPILE TASK ====================
+[Thu Jul 29 15:16:29 PKT 2021][FINE] PB Command for check version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java -version
+[Thu Jul 29 15:16:29 PKT 2021][FINE] Start process check version...
+[Thu Jul 29 15:16:29 PKT 2021][FINE] [SUB] openjdk version "11.0.11" 2021-04-20
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Result for check version: 0
+[Thu Jul 29 15:16:30 PKT 2021][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Extracting native libs to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib
+[Thu Jul 29 15:16:30 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a:
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] storage.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:16:30 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a:
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] util.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:16:30 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 15:16:30 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 15:16:30 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:16:31 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes6577725420503656296/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes6577725420503656296/log4j.xml
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/filter-file.json to /tmp/classes6577725420503656296/META-INF/native-image/filter-file.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json to /tmp/classes6577725420503656296/META-INF/native-image/jni-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/predefined-classes-config.json to /tmp/classes6577725420503656296/META-INF/native-image/predefined-classes-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/proxy-config.json to /tmp/classes6577725420503656296/META-INF/native-image/proxy-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes6577725420503656296/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes6577725420503656296/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/serialization-config.json to /tmp/classes6577725420503656296/META-INF/native-image/serialization-config.json
+[Thu Jul 29 15:16:31 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes6577725420503656296/classes.jar -C /tmp/classes6577725420503656296 .
+[Thu Jul 29 15:16:31 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning for init build time files
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /tmp/classes6577725420503656296/classes.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning for reflection files
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /tmp/classes6577725420503656296/classes.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning for JNI files
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /tmp/classes6577725420503656296/classes.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning for resource files
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:16:32 PKT 2021][FINE] Scanning /tmp/classes6577725420503656296/classes.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes114491088640494642/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes114491088640494642/log4j.xml
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/filter-file.json to /tmp/classes114491088640494642/META-INF/native-image/filter-file.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json to /tmp/classes114491088640494642/META-INF/native-image/jni-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/predefined-classes-config.json to /tmp/classes114491088640494642/META-INF/native-image/predefined-classes-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/proxy-config.json to /tmp/classes114491088640494642/META-INF/native-image/proxy-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes114491088640494642/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes114491088640494642/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/serialization-config.json to /tmp/classes114491088640494642/META-INF/native-image/serialization-config.json
+[Thu Jul 29 15:16:33 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes114491088640494642/classes.jar -C /tmp/classes114491088640494642 .
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning for resource bundles
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Scanning /tmp/classes114491088640494642/classes.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11-android.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11.jar
+[Thu Jul 29 15:16:33 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11-android.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.base.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.controls.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.graphics.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Class-Path manifest entry for pathing jar: ../../../../classes deps/storage-4.0.11-android.jar deps/storage-4.0.11.jar deps/util-4.0.11-android.jar deps/util-4.0.11.jar deps/hsqldb-2.6.0-jdk6.jar deps/javafx.base.jar deps/javafx.controls.jar deps/javafx.graphics.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Pathing jar created at /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar
+[Thu Jul 29 15:16:34 PKT 2021][FINE] PB Command for compile: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
+[Thu Jul 29 15:16:34 PKT 2021][FINE] Start process compile...
+[Thu Jul 29 15:16:35 PKT 2021][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Thu Jul 29 15:16:47 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5079]    classlist:   8,485.37 ms,  0.94 GB
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5079]        setup:     861.47 ms,  0.94 GB
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Error: Error parsing JNI configuration in file:/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json:
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Could not resolve com.sun.glass.ui.win.WinApplication for reflection configuration. Reason: java.lang.ClassNotFoundException: com.sun.glass.ui.win.WinApplication. To allow unresolvable reflection configuration, use option -H:+AllowIncompleteClasspath
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Verify that the configuration matches the schema described in the -H:PrintFlags=+ output for option JNIConfigurationResources.
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] com.oracle.svm.core.util.UserError$UserException: Error parsing JNI configuration in file:/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json:
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Could not resolve com.sun.glass.ui.win.WinApplication for reflection configuration. Reason: java.lang.ClassNotFoundException: com.sun.glass.ui.win.WinApplication. To allow unresolvable reflection configuration, use option -H:+AllowIncompleteClasspath
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Verify that the configuration matches the schema described in the -H:PrintFlags=+ output for option JNIConfigurationResources.
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.core.util.UserError.abort(UserError.java:68)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.doParseAndRegister(ConfigurationParserUtils.java:133)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.lambda$parseAndRegisterConfigurations$3(ConfigurationParserUtils.java:111)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$4$1.accept(ReferencePipeline.java:212)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils$1.tryAdvance(ConfigurationParserUtils.java:104)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.Spliterator.forEachRemaining(Spliterator.java:326)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.IntPipeline.reduce(IntPipeline.java:491)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.IntPipeline.sum(IntPipeline.java:449)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.parseAndRegisterConfigurations(ConfigurationParserUtils.java:113)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.jni.access.JNIAccessFeature.afterRegistration(JNIAccessFeature.java:127)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$15(NativeImageGenerator.java:854)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:71)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:854)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:530)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:491)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:380)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:543)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:119)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner$JDK9Plus.main(NativeImageGeneratorRunner.java:573)
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5079]      [total]:   9,443.41 ms,  0.94 GB
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] # Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+[Thu Jul 29 15:16:48 PKT 2021][INFO] [SUB] Error: Image build request failed with exit status 1
+[Thu Jul 29 15:16:48 PKT 2021][FINE] Result for compile: 1
+[Thu Jul 29 15:16:48 PKT 2021][SEVERE] Process compile failed with result: 1
+Check the log files under /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Jul 29 15:16:48 PKT 2021][INFO] Logging process [compile] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-compile-1627553808754.log
+[Thu Jul 29 15:16:48 PKT 2021][SEVERE] Compiling failed.
+Check the log files under /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Jul 29 15:22:36 PKT 2021][INFO] ==================== COMPILE TASK ====================
+[Thu Jul 29 15:22:38 PKT 2021][FINE] PB Command for check version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java -version
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Start process check version...
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] openjdk version "11.0.11" 2021-04-20
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Result for check version: 0
+[Thu Jul 29 15:22:38 PKT 2021][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Extracting native libs to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib
+[Thu Jul 29 15:22:38 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a:
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] storage.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:22:38 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a:
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] util.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:22:38 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 15:22:38 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 15:22:38 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 15:22:39 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 15:22:39 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 15:22:39 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 15:22:39 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:22:40 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes11430179441371936073/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes11430179441371936073/log4j.xml
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/filter-file.json to /tmp/classes11430179441371936073/META-INF/native-image/filter-file.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json to /tmp/classes11430179441371936073/META-INF/native-image/jni-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/predefined-classes-config.json to /tmp/classes11430179441371936073/META-INF/native-image/predefined-classes-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/proxy-config.json to /tmp/classes11430179441371936073/META-INF/native-image/proxy-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes11430179441371936073/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes11430179441371936073/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/serialization-config.json to /tmp/classes11430179441371936073/META-INF/native-image/serialization-config.json
+[Thu Jul 29 15:22:40 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes11430179441371936073/classes.jar -C /tmp/classes11430179441371936073 .
+[Thu Jul 29 15:22:40 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning for init build time files
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /tmp/classes11430179441371936073/classes.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning for reflection files
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /tmp/classes11430179441371936073/classes.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning for JNI files
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /tmp/classes11430179441371936073/classes.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning for resource files
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /tmp/classes11430179441371936073/classes.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes15295715250343243433/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes15295715250343243433/log4j.xml
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/filter-file.json to /tmp/classes15295715250343243433/META-INF/native-image/filter-file.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json to /tmp/classes15295715250343243433/META-INF/native-image/jni-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/predefined-classes-config.json to /tmp/classes15295715250343243433/META-INF/native-image/predefined-classes-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/proxy-config.json to /tmp/classes15295715250343243433/META-INF/native-image/proxy-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes15295715250343243433/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes15295715250343243433/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/serialization-config.json to /tmp/classes15295715250343243433/META-INF/native-image/serialization-config.json
+[Thu Jul 29 15:22:41 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes15295715250343243433/classes.jar -C /tmp/classes15295715250343243433 .
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning for resource bundles
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:22:41 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Scanning /tmp/classes15295715250343243433/classes.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11-android.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11-android.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.base.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.controls.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.graphics.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Class-Path manifest entry for pathing jar: ../../../../classes deps/storage-4.0.11-android.jar deps/storage-4.0.11.jar deps/util-4.0.11-android.jar deps/util-4.0.11.jar deps/hsqldb-2.6.0-jdk6.jar deps/javafx.base.jar deps/javafx.controls.jar deps/javafx.graphics.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Pathing jar created at /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar
+[Thu Jul 29 15:22:42 PKT 2021][FINE] PB Command for compile: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
+[Thu Jul 29 15:22:42 PKT 2021][FINE] Start process compile...
+[Thu Jul 29 15:22:43 PKT 2021][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5313]    classlist:   3,908.82 ms,  0.96 GB
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5313]        setup:     590.83 ms,  0.96 GB
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Error: Error parsing JNI configuration in file:/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json:
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Could not resolve com.sun.glass.ui.win.WinApplication for reflection configuration. Reason: java.lang.ClassNotFoundException: com.sun.glass.ui.win.WinApplication. To allow unresolvable reflection configuration, use option -H:+AllowIncompleteClasspath
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Verify that the configuration matches the schema described in the -H:PrintFlags=+ output for option JNIConfigurationResources.
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] com.oracle.svm.core.util.UserError$UserException: Error parsing JNI configuration in file:/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/jni-config.json:
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Could not resolve com.sun.glass.ui.win.WinApplication for reflection configuration. Reason: java.lang.ClassNotFoundException: com.sun.glass.ui.win.WinApplication. To allow unresolvable reflection configuration, use option -H:+AllowIncompleteClasspath
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Verify that the configuration matches the schema described in the -H:PrintFlags=+ output for option JNIConfigurationResources.
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.core.util.UserError.abort(UserError.java:68)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.doParseAndRegister(ConfigurationParserUtils.java:133)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.lambda$parseAndRegisterConfigurations$3(ConfigurationParserUtils.java:111)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$4$1.accept(ReferencePipeline.java:212)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils$1.tryAdvance(ConfigurationParserUtils.java:104)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.Spliterator.forEachRemaining(Spliterator.java:326)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.IntPipeline.reduce(IntPipeline.java:491)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at java.base/java.util.stream.IntPipeline.sum(IntPipeline.java:449)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.config.ConfigurationParserUtils.parseAndRegisterConfigurations(ConfigurationParserUtils.java:113)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.jni.access.JNIAccessFeature.afterRegistration(JNIAccessFeature.java:127)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$15(NativeImageGenerator.java:854)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:71)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:854)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:530)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:491)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:380)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:543)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:119)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGeneratorRunner$JDK9Plus.main(NativeImageGeneratorRunner.java:573)
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5313]      [total]:   4,548.96 ms,  0.96 GB
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] # Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+[Thu Jul 29 15:22:48 PKT 2021][INFO] [SUB] Error: Image build request failed with exit status 1
+[Thu Jul 29 15:22:48 PKT 2021][FINE] Result for compile: 1
+[Thu Jul 29 15:22:48 PKT 2021][SEVERE] Process compile failed with result: 1
+Check the log files under /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Jul 29 15:22:48 PKT 2021][INFO] Logging process [compile] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-compile-1627554168920.log
+[Thu Jul 29 15:22:48 PKT 2021][SEVERE] Compiling failed.
+Check the log files under /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/ for more information.
+[Thu Jul 29 15:28:22 PKT 2021][INFO] ==================== COMPILE TASK ====================
+[Thu Jul 29 15:28:27 PKT 2021][FINE] PB Command for check version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java -version
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Start process check version...
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] openjdk version "11.0.11" 2021-04-20
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Result for check version: 0
+[Thu Jul 29 15:28:27 PKT 2021][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Extracting native libs to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib
+[Thu Jul 29 15:28:27 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a:
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] storage.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:28:27 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a:
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] util.o:     file format elf64-littleaarch64
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 15:28:27 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 15:28:27 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 15:28:27 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 15:28:28 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes10666852848652242071/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes10666852848652242071/log4j.xml
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes10666852848652242071/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes10666852848652242071/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:28:28 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes10666852848652242071/classes.jar -C /tmp/classes10666852848652242071 .
+[Thu Jul 29 15:28:28 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning for init build time files
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /tmp/classes10666852848652242071/classes.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning for reflection files
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /tmp/classes10666852848652242071/classes.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning for JNI files
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /tmp/classes10666852848652242071/classes.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning for resource files
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Scanning /tmp/classes10666852848652242071/classes.jar
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes1795766091885461760/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes1795766091885461760/log4j.xml
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes1795766091885461760/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes1795766091885461760/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:28:29 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes1795766091885461760/classes.jar -C /tmp/classes1795766091885461760 .
+[Thu Jul 29 15:28:29 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning for resource bundles
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Scanning /tmp/classes1795766091885461760/classes.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11-android.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11-android.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.base.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.controls.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.graphics.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Class-Path manifest entry for pathing jar: ../../../../classes deps/storage-4.0.11-android.jar deps/storage-4.0.11.jar deps/util-4.0.11-android.jar deps/util-4.0.11.jar deps/hsqldb-2.6.0-jdk6.jar deps/javafx.base.jar deps/javafx.controls.jar deps/javafx.graphics.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Pathing jar created at /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar
+[Thu Jul 29 15:28:30 PKT 2021][FINE] PB Command for compile: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
+[Thu Jul 29 15:28:30 PKT 2021][FINE] Start process compile...
+[Thu Jul 29 15:28:31 PKT 2021][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Thu Jul 29 15:28:36 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]    classlist:   3,598.90 ms,  0.96 GB
+[Thu Jul 29 15:28:37 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]        (cap):     425.89 ms,  0.96 GB
+[Thu Jul 29 15:28:39 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]        setup:   3,573.25 ms,  0.96 GB
+[Thu Jul 29 15:30:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]     (clinit):   1,192.61 ms,  4.10 GB
+[Thu Jul 29 15:30:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]   (typeflow):  64,519.40 ms,  4.10 GB
+[Thu Jul 29 15:30:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]    (objects):  45,428.50 ms,  4.10 GB
+[Thu Jul 29 15:30:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]   (features):  16,424.30 ms,  4.10 GB
+[Thu Jul 29 15:30:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]     analysis: 129,770.85 ms,  4.10 GB
+[Thu Jul 29 15:30:55 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]     universe:   5,350.29 ms,  4.10 GB
+[Thu Jul 29 15:31:01 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]      (parse):   6,068.88 ms,  3.96 GB
+[Thu Jul 29 15:31:53 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]     (inline):  50,932.55 ms,  4.99 GB
+[Thu Jul 29 15:33:18 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]    (compile):  80,839.52 ms,  5.25 GB
+[Thu Jul 29 15:33:23 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]      compile: 147,530.59 ms,  5.25 GB
+[Thu Jul 29 15:33:36 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]        image:  12,804.82 ms,  5.25 GB
+[Thu Jul 29 15:33:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]        write:  13,065.17 ms,  5.25 GB
+[Thu Jul 29 15:33:49 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:5541]      [total]: 316,772.86 ms,  5.25 GB
+[Thu Jul 29 15:33:49 PKT 2021][INFO] [SUB] # Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+[Thu Jul 29 15:33:50 PKT 2021][FINE] Result for compile: 0
+[Thu Jul 29 15:33:50 PKT 2021][FINE] Logging process [compile] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-compile-1627554830723.log
+[Thu Jul 29 15:33:54 PKT 2021][FINE] PB Command for java-version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java --version
+[Thu Jul 29 15:33:54 PKT 2021][FINE] Start process java-version...
+[Thu Jul 29 15:33:57 PKT 2021][FINE] [SUB] openjdk 11.0.11 2021-04-20
+[Thu Jul 29 15:33:57 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 15:33:57 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 15:33:57 PKT 2021][FINE] Result for java-version: 0
+[Thu Jul 29 15:34:59 PKT 2021][INFO] ==================== PACKAGE TASK ====================
+[Thu Jul 29 15:35:24 PKT 2021][FINE] FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/ not found. Trying to create a new FileSystem instead.
+[Thu Jul 29 15:35:25 PKT 2021][FINE] Created FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/: /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar
+[Thu Jul 29 15:35:53 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes7695326434153310884/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:35:53 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes7695326434153310884/log4j.xml
+[Thu Jul 29 15:35:53 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes7695326434153310884/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:35:53 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes7695326434153310884/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:35:53 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes7695326434153310884/classes.jar -C /tmp/classes7695326434153310884 .
+[Thu Jul 29 15:35:53 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:36:12 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:36:12 PKT 2021][FINE] Scanning for android dependencies files
+[Thu Jul 29 15:36:12 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:36:12 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
+[Thu Jul 29 15:36:13 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
+[Thu Jul 29 15:36:14 PKT 2021][FINE] Scanning /tmp/classes7695326434153310884/classes.jar
+[Thu Jul 29 15:36:17 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-hdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-hdpi/ic_launcher.png
+[Thu Jul 29 15:36:17 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-ldpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-ldpi/ic_launcher.png
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-mdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-mdpi/ic_launcher.png
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes11601753128535014998/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes11601753128535014998/log4j.xml
+[Thu Jul 29 15:36:18 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes11601753128535014998/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:36:19 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes11601753128535014998/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:36:19 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes11601753128535014998/classes.jar -C /tmp/classes11601753128535014998 .
+[Thu Jul 29 15:36:19 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:36:19 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Scanning for dalvik classes
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes12207214945002390562/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes12207214945002390562/log4j.xml
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes12207214945002390562/META-INF/native-image/reflect-config.json
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes12207214945002390562/META-INF/native-image/resource-config.json
+[Thu Jul 29 15:36:20 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes12207214945002390562/classes.jar -C /tmp/classes12207214945002390562 .
+[Thu Jul 29 15:36:20 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Scanning /tmp/classes12207214945002390562/classes.jar
+[Thu Jul 29 15:36:21 PKT 2021][FINE] PB Command for merge-dalvik-classes: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar -cvf ../additional_classes.jar .
+[Thu Jul 29 15:36:21 PKT 2021][FINE] Start process merge-dalvik-classes...
+[Thu Jul 29 15:36:21 PKT 2021][FINE] [SUB] added manifest
+[Thu Jul 29 15:36:22 PKT 2021][FINE] Result for merge-dalvik-classes: 0
+[Thu Jul 29 15:36:29 PKT 2021][FINE] PB Command for package-task: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/gradlew -p /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project assembleDebug
+[Thu Jul 29 15:36:29 PKT 2021][FINE] Start process package-task...
+[Thu Jul 29 15:37:09 PKT 2021][FINE] [SUB] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/6.4.1/userguide/gradle_daemon.html.
+[Thu Jul 29 15:37:23 PKT 2021][FINE] [SUB] Daemon will be stopped at the end of the build stopping after processing
+[Thu Jul 29 15:37:59 PKT 2021][FINE] [SUB] > Task :app:preBuild UP-TO-DATE
+[Thu Jul 29 15:37:59 PKT 2021][FINE] [SUB] > Task :app:preDebugBuild UP-TO-DATE
+[Thu Jul 29 15:37:59 PKT 2021][FINE] [SUB] > Task :app:compileDebugAidl NO-SOURCE
+[Thu Jul 29 15:37:59 PKT 2021][FINE] [SUB] > Task :app:generateDebugBuildConfig
+[Thu Jul 29 15:37:59 PKT 2021][FINE] [SUB] > Task :app:compileDebugRenderscript NO-SOURCE
+[Thu Jul 29 15:38:00 PKT 2021][FINE] [SUB] > Task :app:javaPreCompileDebug
+[Thu Jul 29 15:38:00 PKT 2021][FINE] [SUB] > Task :app:generateDebugResValues
+[Thu Jul 29 15:38:00 PKT 2021][FINE] [SUB] > Task :app:generateDebugResources
+[Thu Jul 29 15:38:05 PKT 2021][FINE] [SUB] > Task :app:createDebugCompatibleScreenManifests
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] > Task :app:mergeDebugResources
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] > Task :app:extractDeepLinksDebug
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] > Task :app:processDebugMainManifest
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] [Storage.aar] /mnt/d/.my-gradle/caches/transforms-2/files-2.1/d2432daa5bb5223d8a1e951d1958b891/jetified-Storage/AndroidManifest.xml Warning:
+[Thu Jul 29 15:38:06 PKT 2021][FINE] [SUB] 	Package name 'com.gluonhq.helloandroid' used in: Storage.aar, Util.aar.
+[Thu Jul 29 15:38:08 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:38:08 PKT 2021][FINE] [SUB] > Task :app:processDebugManifest
+[Thu Jul 29 15:38:09 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[Thu Jul 29 15:38:09 PKT 2021][FINE] [SUB] > Task :app:processDebugManifestForPackage
+[Thu Jul 29 15:38:11 PKT 2021][FINE] [SUB] > Task :app:processDebugResources
+[Thu Jul 29 15:38:18 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:38:18 PKT 2021][FINE] [SUB] > Task :app:compileDebugJavaWithJavac
+[Thu Jul 29 15:38:18 PKT 2021][FINE] [SUB] Note: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/java/com/gluonhq/helloandroid/MainActivity.java uses or overrides a deprecated API.
+[Thu Jul 29 15:38:18 PKT 2021][FINE] [SUB] Note: Recompile with -Xlint:deprecation for details.
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:compileDebugSources
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:mergeDebugShaders
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:compileDebugShaders NO-SOURCE
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:generateDebugAssets UP-TO-DATE
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:mergeDebugAssets
+[Thu Jul 29 15:38:19 PKT 2021][FINE] [SUB] > Task :app:processDebugJavaRes NO-SOURCE
+[Thu Jul 29 15:38:31 PKT 2021][FINE] [SUB] > Task :app:dexBuilderDebug
+[Thu Jul 29 15:38:31 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJavaResource
+[Thu Jul 29 15:38:31 PKT 2021][FINE] [SUB] > Task :app:checkDebugDuplicateClasses
+[Thu Jul 29 15:38:31 PKT 2021][FINE] [SUB] > Task :app:desugarDebugFileDependencies
+[Thu Jul 29 15:38:31 PKT 2021][FINE] [SUB] > Task :app:mergeLibDexDebug
+[Thu Jul 29 15:38:33 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJniLibFolders
+[Thu Jul 29 15:38:34 PKT 2021][FINE] [SUB] > Task :app:mergeProjectDexDebug
+[Thu Jul 29 15:38:35 PKT 2021][FINE] [SUB] > Task :app:validateSigningDebug
+[Thu Jul 29 15:38:39 PKT 2021][FINE] [SUB] > Task :app:mergeExtDexDebug
+[Thu Jul 29 15:38:41 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeLibs
+[Thu Jul 29 15:38:43 PKT 2021][FINE] [SUB] > Task :app:stripDebugDebugSymbols
+[Thu Jul 29 15:38:48 PKT 2021][FINE] [SUB] > Task :app:packageDebug
+[Thu Jul 29 15:38:48 PKT 2021][FINE] [SUB] > Task :app:assembleDebug
+[Thu Jul 29 15:38:48 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 15:38:48 PKT 2021][FINE] [SUB] BUILD SUCCESSFUL in 2m 17s
+[Thu Jul 29 15:38:48 PKT 2021][FINE] [SUB] 25 actionable tasks: 25 executed
+[Thu Jul 29 15:38:49 PKT 2021][FINE] Result for package-task: 0
+[Thu Jul 29 15:38:49 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/build/outputs/apk/debug/app-debug.apk to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest.apk
+[Thu Jul 29 15:40:59 PKT 2021][INFO] ==================== RUN TASK ====================
+[Thu Jul 29 15:40:59 PKT 2021][FINE] PB Command for clearLog: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -c
+[Thu Jul 29 15:40:59 PKT 2021][FINE] Start process clearLog...
+[Thu Jul 29 15:40:59 PKT 2021][FINE] PB Command for run: /mnt/d/AndroidSDKLinux/platform-tools/adb shell monkey -p com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest 1
+[Thu Jul 29 15:40:59 PKT 2021][FINE] Start process run...
+[Thu Jul 29 15:40:59 PKT 2021][FINE] [SUB]   bash arg: -p
+[Thu Jul 29 15:40:59 PKT 2021][FINE] [SUB]   bash arg: com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest
+[Thu Jul 29 15:40:59 PKT 2021][FINE] [SUB]   bash arg: 1
+[Thu Jul 29 15:40:59 PKT 2021][FINE] Result for clearLog: 0
+[Thu Jul 29 15:40:59 PKT 2021][FINE] PB Command for log: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
+[Thu Jul 29 15:40:59 PKT 2021][FINE] Start process log...
+[Thu Jul 29 15:41:00 PKT 2021][INFO] [SUB] --------- beginning of main
+[Thu Jul 29 15:41:00 PKT 2021][FINE] [SUB] args: [-p, com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest, 1]
+[Thu Jul 29 15:41:00 PKT 2021][FINE] [SUB]  arg: "-p"
+[Thu Jul 29 15:41:00 PKT 2021][FINE] [SUB]  arg: "com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
+[Thu Jul 29 15:41:00 PKT 2021][FINE] [SUB]  arg: "1"
+[Thu Jul 29 15:41:00 PKT 2021][FINE] [SUB] data="com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
+[Thu Jul 29 15:41:01 PKT 2021][FINE] [SUB] Events injected: 1
+[Thu Jul 29 15:41:01 PKT 2021][FINE] [SUB] ## Network stats: elapsed time=75ms (0ms mobile, 0ms wifi, 75ms not connected)
+[Thu Jul 29 15:41:01 PKT 2021][FINE] Result for run: 0
+[Thu Jul 29 15:41:01 PKT 2021][INFO] [SUB] --------- beginning of system
+[Thu Jul 29 15:42:23 PKT 2021][FINE] Result for log: 130
