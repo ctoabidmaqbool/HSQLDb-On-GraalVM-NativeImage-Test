@@ -31,3 +31,69 @@
 [Wed Jul 28 17:05:35 PKT 2021][FINE] Start process link...
 [Wed Jul 28 17:05:49 PKT 2021][FINE] Result for link: 0
 [Wed Jul 28 17:05:49 PKT 2021][FINE] Logging process [link] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-link-1627473949121.log
+[Thu Jul 29 11:36:35 PKT 2021][INFO] ==================== LINK TASK ====================
+[Thu Jul 29 11:36:35 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 11:36:35 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 11:36:36 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 11:36:36 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 11:36:43 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 11:36:43 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 11:36:43 PKT 2021][FINE] PB Command for link: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/launcher.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/javafx_adapter.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/touch_events.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/glibc_shim.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/attach_adapter.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/logger.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/SVM-1627540299383/com.maqboolsolutions.hsqldbgraalvmtest.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -lsunec -ljaas -lextnet -target aarch64-linux-android21 -fPIC -fuse-ld=gold -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/libHSQLDbOnGraalVMNativeImageTest.so -L/home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib -L/mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/lib/svm/clibraries/android-aarch64 -L/home/maqboolstudiopc/.gluon/substrate/javaStaticSdk/11-ea+10/android-aarch64/labs-staticjdk/lib/static -L/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Thu Jul 29 11:36:43 PKT 2021][FINE] Start process link...
+[Thu Jul 29 11:36:50 PKT 2021][FINE] Result for link: 0
+[Thu Jul 29 11:36:50 PKT 2021][FINE] Logging process [link] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-link-1627540610563.log
+[Thu Jul 29 12:11:44 PKT 2021][INFO] ==================== LINK TASK ====================
+[Thu Jul 29 12:11:44 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 12:11:44 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 12:11:45 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 12:11:45 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 12:11:52 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 12:11:52 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 12:11:52 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 12:11:53 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 12:11:55 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 12:11:56 PKT 2021][FINE] PB Command for link: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/launcher.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/javafx_adapter.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/touch_events.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/glibc_shim.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/attach_adapter.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/logger.o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/SVM-1627542403566/com.maqboolsolutions.hsqldbgraalvmtest.main.o -ljava -lnio -lzip -lnet -lprefs -ljvm -lfdlibm -lz -ldl -lj2pkcs11 -lsunec -ljaas -lextnet -target aarch64-linux-android21 -fPIC -fuse-ld=gold -Wl,--rosegment,--gc-sections,-z,noexecstack -shared -landroid -llog -lffi -llibchelper -static-libstdc++ -Wl,--whole-archive -lprism_es2_monocle -lglass_monocle -ljavafx_font_freetype -ljavafx_iio -Wl,--no-whole-archive -lGLESv2 -lEGL -lfreetype -o /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/libHSQLDbOnGraalVMNativeImageTest.so -L/home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib -L/mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/lib/svm/clibraries/android-aarch64 -L/home/maqboolstudiopc/.gluon/substrate/javaStaticSdk/11-ea+10/android-aarch64/labs-staticjdk/lib/static -L/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib -Wl,--whole-archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a -Wl,--no-whole-archive
+[Thu Jul 29 12:11:56 PKT 2021][FINE] Start process link...
+[Thu Jul 29 12:12:04 PKT 2021][FINE] Result for link: 0
+[Thu Jul 29 12:12:04 PKT 2021][FINE] Logging process [link] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-link-1627542724530.log
