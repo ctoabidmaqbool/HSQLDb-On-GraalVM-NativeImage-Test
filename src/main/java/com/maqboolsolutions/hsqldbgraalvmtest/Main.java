@@ -16,11 +16,13 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.sql.*;
 
 public class Main extends Application {
 
-    String DB_URL = "jdbc:hsqldb:file:" + getFile("HsqlDb Database/hsqldb-database") + ";crypt_key=C3ACDC4DA6A15C33BF2F54804C2EF281;crypt_type=AES;shutdown=true";
+    String DB_URL = "jdbc:hsqldb:file:" + getFile("HsqlDb Database/hsqldb-database") + ";crypt_key=C3ACDC4DA6A15C33BF2F54804C2EF281;crypt_type=AES;shutdown=true;hsqldb.lock_file=false";
     String DB_USER = "SA";
     String DB_PASSWORD = "";
     String DRIVER = "org.hsqldb.jdbc.JDBCDriver";
@@ -49,6 +51,16 @@ public class Main extends Application {
         pStage.setTitle("HSQLDb On GraalVM NativeImage Test!");
         pStage.setScene(scene);
         pStage.show();
+
+        getFile("HsqlDb Database").mkdir();
+
+        try (FileOutputStream outputStream = new FileOutputStream(getFile("HsqlDb Database/temp.txt"))) {
+            outputStream.write("Hello Android.".getBytes());
+
+            txtPath.appendText("File Created At:" + "\n" + getFile("HsqlDb Database/temp.txt").getAbsolutePath() + "\n" + "------------" + "\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         btnCreateDb.setOnAction((event) -> {
             Connection con = null;
