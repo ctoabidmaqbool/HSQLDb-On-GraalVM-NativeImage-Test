@@ -16,7 +16,7 @@ Please follow the prerequisites as stated [here](https://docs.gluonhq.com/#_requ
 In root project folder e.g. `HSQLDb-On-GraalVM-NativeImage-Test` execute below command in terminal.
 
     mvn install:install-file -Dfile=lib/hsqldb-2.6.0-jdk6.jar -DgroupId=org.hsqldb -DartifactId=hsqldb -Dversion=2.6.0-jdk6 -Dpackaging=jar
-This jar file e.g.  is located under [lib](https://github.com/ctoabidmaqbool/HSQLDb-On-GraalVM-NativeImage-Test/tree/main/lib) folder in root project folder.
+This jar file e.g.  is located under [lib](https://github.com/ctoabidmaqbool/HSQLDb-On-GraalVM-NativeImage-Test/tree/JNI_OnLoad_awt_error/lib) folder in root project folder.
 
 ### Desktop
 
@@ -71,5 +71,6 @@ Android log files:
 ## Issues:
 
 - [HSQLDb not working on Android with GraalVM (gluonfx-maven-plugin)](https://github.com/ctoabidmaqbool/HSQLDb-On-GraalVM-NativeImage-Test/issues/1)
+- [java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "JNI_OnLoad_awt" referenced by "/data/app/~~ySAMTz_BRuG3hf0ioN_Hlw==/com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest-DWGgBp_MoA4FsRHyKUPv3Q==/lib/arm64/libsubstrate.so"](https://github.com/gluonhq/gluonfx-maven-plugin/issues/349)
 
 **Let me know for more info / any problem you faced.**
