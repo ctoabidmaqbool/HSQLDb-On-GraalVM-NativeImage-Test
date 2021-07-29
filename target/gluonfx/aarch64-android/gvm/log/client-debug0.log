@@ -1,774 +1,362 @@
-[Wed Jul 28 16:59:37 PKT 2021][INFO] ==================== COMPILE TASK ====================
-[Wed Jul 28 16:59:40 PKT 2021][FINE] PB Command for check version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java -version
-[Wed Jul 28 16:59:40 PKT 2021][FINE] Start process check version...
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] openjdk version "11.0.11" 2021-04-20
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
-[Wed Jul 28 16:59:40 PKT 2021][FINE] Result for check version: 0
-[Wed Jul 28 16:59:40 PKT 2021][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
-[Wed Jul 28 16:59:40 PKT 2021][FINE] Extracting native libs to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib
-[Wed Jul 28 16:59:40 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a
-[Wed Jul 28 16:59:40 PKT 2021][FINE] Start process objdump...
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a:
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] storage.o:     file format elf64-littleaarch64
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] start address 0x0000000000000000
-[Wed Jul 28 16:59:40 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 16:59:40 PKT 2021][FINE] Result for objdump: 0
-[Wed Jul 28 16:59:41 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Start process objdump...
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a:
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] util.o:     file format elf64-littleaarch64
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] start address 0x0000000000000000
-[Wed Jul 28 16:59:41 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Result for objdump: 0
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
-[Wed Jul 28 16:59:41 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
-[Wed Jul 28 16:59:41 PKT 2021][FINE] Start process compile-additional-sources...
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]            ^
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] 1 warning generated.
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
-[Wed Jul 28 16:59:44 PKT 2021][FINE] [SUB] 2 warnings generated.
-[Wed Jul 28 16:59:44 PKT 2021][FINE] Result for compile-additional-sources: 0
-[Wed Jul 28 16:59:44 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes7187259785926948311/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
-[Wed Jul 28 16:59:44 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes7187259785926948311/META-INF/native-image/reflect-config.json
-[Wed Jul 28 16:59:44 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes7187259785926948311/META-INF/native-image/resource-config.json
-[Wed Jul 28 16:59:44 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes7187259785926948311/classes.jar -C /tmp/classes7187259785926948311 .
-[Wed Jul 28 16:59:44 PKT 2021][FINE] Start process jar...
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Result for jar: 0
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning for init build time files
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /tmp/classes7187259785926948311/classes.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning for reflection files
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /tmp/classes7187259785926948311/classes.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning for JNI files
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /tmp/classes7187259785926948311/classes.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning for resource files
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Scanning /tmp/classes7187259785926948311/classes.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/ not found. Trying to create a new FileSystem instead.
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Created FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/: /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes877383108631538730/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes877383108631538730/META-INF/native-image/reflect-config.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes877383108631538730/META-INF/native-image/resource-config.json
-[Wed Jul 28 16:59:45 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes877383108631538730/classes.jar -C /tmp/classes877383108631538730 .
-[Wed Jul 28 16:59:45 PKT 2021][FINE] Start process jar...
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Result for jar: 0
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning for resource bundles
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/resourcebundles
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/resourcebundles
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Scanning /tmp/classes877383108631538730/classes.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11-android.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11-android.jar
-[Wed Jul 28 16:59:46 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11.jar
-[Wed Jul 28 16:59:47 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 16:59:47 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.base.jar
-[Wed Jul 28 16:59:48 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.controls.jar
-[Wed Jul 28 16:59:49 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.graphics.jar
-[Wed Jul 28 16:59:49 PKT 2021][FINE] Class-Path manifest entry for pathing jar: ../../../../classes deps/storage-4.0.11-android.jar deps/storage-4.0.11.jar deps/util-4.0.11-android.jar deps/util-4.0.11.jar deps/hsqldb-2.6.0-jdk6.jar deps/javafx.base.jar deps/javafx.controls.jar deps/javafx.graphics.jar
-[Wed Jul 28 16:59:49 PKT 2021][FINE] Pathing jar created at /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar
-[Wed Jul 28 16:59:49 PKT 2021][FINE] PB Command for compile: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
-[Wed Jul 28 16:59:49 PKT 2021][FINE] Start process compile...
-[Wed Jul 28 16:59:51 PKT 2021][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
-[Wed Jul 28 17:00:22 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]    classlist:   7,772.70 ms,  0.94 GB
-[Wed Jul 28 17:00:24 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]        (cap):     560.94 ms,  0.94 GB
-[Wed Jul 28 17:00:26 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]        setup:   4,081.43 ms,  0.94 GB
-[Wed Jul 28 17:02:42 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]     (clinit):   1,189.57 ms,  4.16 GB
-[Wed Jul 28 17:02:43 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]   (typeflow):  68,591.56 ms,  4.16 GB
-[Wed Jul 28 17:02:43 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]    (objects):  46,431.53 ms,  4.16 GB
-[Wed Jul 28 17:02:43 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]   (features):  17,169.81 ms,  4.16 GB
-[Wed Jul 28 17:02:43 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]     analysis: 136,136.36 ms,  4.16 GB
-[Wed Jul 28 17:02:47 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]     universe:   4,496.78 ms,  4.16 GB
-[Wed Jul 28 17:02:53 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]      (parse):   5,539.26 ms,  3.95 GB
-[Wed Jul 28 17:03:34 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]     (inline):  40,171.69 ms,  4.92 GB
-[Wed Jul 28 17:04:44 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]    (compile):  67,925.55 ms,  5.12 GB
-[Wed Jul 28 17:04:48 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]      compile: 120,445.02 ms,  5.12 GB
-[Wed Jul 28 17:05:04 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]        image:  15,786.53 ms,  5.21 GB
-[Wed Jul 28 17:05:11 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]        write:   7,210.21 ms,  5.21 GB
-[Wed Jul 28 17:05:11 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:223]      [total]: 297,192.20 ms,  5.21 GB
-[Wed Jul 28 17:05:11 PKT 2021][INFO] [SUB] # Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
-[Wed Jul 28 17:05:13 PKT 2021][FINE] Result for compile: 0
-[Wed Jul 28 17:05:14 PKT 2021][FINE] Logging process [compile] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-compile-1627473913702.log
-[Wed Jul 28 17:05:15 PKT 2021][FINE] PB Command for java-version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java --version
-[Wed Jul 28 17:05:15 PKT 2021][FINE] Start process java-version...
-[Wed Jul 28 17:05:21 PKT 2021][FINE] [SUB] openjdk 11.0.11 2021-04-20
-[Wed Jul 28 17:05:21 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
-[Wed Jul 28 17:05:21 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
-[Wed Jul 28 17:05:21 PKT 2021][FINE] Result for java-version: 0
-[Wed Jul 28 17:05:57 PKT 2021][INFO] ==================== PACKAGE TASK ====================
-[Wed Jul 28 17:05:58 PKT 2021][FINE] FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/ not found. Trying to create a new FileSystem instead.
-[Wed Jul 28 17:05:59 PKT 2021][FINE] Created FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/: /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar
-[Wed Jul 28 17:06:02 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes13616353633973029382/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
-[Wed Jul 28 17:06:02 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes13616353633973029382/META-INF/native-image/reflect-config.json
-[Wed Jul 28 17:06:02 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes13616353633973029382/META-INF/native-image/resource-config.json
-[Wed Jul 28 17:06:02 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes13616353633973029382/classes.jar -C /tmp/classes13616353633973029382 .
-[Wed Jul 28 17:06:02 PKT 2021][FINE] Start process jar...
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Result for jar: 0
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning for android dependencies files
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
-[Wed Jul 28 17:06:07 PKT 2021][FINE] Scanning /tmp/classes13616353633973029382/classes.jar
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-hdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-hdpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-ldpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-ldpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-mdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-mdpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xhdpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes10079735267552496093/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes10079735267552496093/META-INF/native-image/reflect-config.json
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes10079735267552496093/META-INF/native-image/resource-config.json
-[Wed Jul 28 17:06:08 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes10079735267552496093/classes.jar -C /tmp/classes10079735267552496093 .
-[Wed Jul 28 17:06:08 PKT 2021][FINE] Start process jar...
-[Wed Jul 28 17:06:09 PKT 2021][FINE] Result for jar: 0
-[Wed Jul 28 17:06:10 PKT 2021][FINE] Scanning for dalvik classes
-[Wed Jul 28 17:06:10 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes12047890750597001450/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
-[Wed Jul 28 17:06:10 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes12047890750597001450/META-INF/native-image/reflect-config.json
-[Wed Jul 28 17:06:10 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes12047890750597001450/META-INF/native-image/resource-config.json
-[Wed Jul 28 17:06:10 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes12047890750597001450/classes.jar -C /tmp/classes12047890750597001450 .
-[Wed Jul 28 17:06:10 PKT 2021][FINE] Start process jar...
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Result for jar: 0
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Scanning /tmp/classes12047890750597001450/classes.jar
-[Wed Jul 28 17:06:11 PKT 2021][FINE] PB Command for merge-dalvik-classes: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar -cvf ../additional_classes.jar .
-[Wed Jul 28 17:06:11 PKT 2021][FINE] Start process merge-dalvik-classes...
-[Wed Jul 28 17:06:11 PKT 2021][FINE] [SUB] added manifest
-[Wed Jul 28 17:06:12 PKT 2021][FINE] Result for merge-dalvik-classes: 0
-[Wed Jul 28 17:06:13 PKT 2021][FINE] PB Command for package-task: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/gradlew -p /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project assembleDebug
-[Wed Jul 28 17:06:13 PKT 2021][FINE] Start process package-task...
-[Wed Jul 28 17:06:27 PKT 2021][FINE] [SUB] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/6.4.1/userguide/gradle_daemon.html.
-[Wed Jul 28 17:06:40 PKT 2021][FINE] [SUB] Daemon will be stopped at the end of the build stopping after processing
-[Wed Jul 28 17:07:12 PKT 2021][FINE] [SUB] > Task :app:preBuild UP-TO-DATE
-[Wed Jul 28 17:07:12 PKT 2021][FINE] [SUB] > Task :app:preDebugBuild UP-TO-DATE
-[Wed Jul 28 17:07:13 PKT 2021][FINE] [SUB] > Task :app:compileDebugAidl NO-SOURCE
-[Wed Jul 28 17:07:13 PKT 2021][FINE] [SUB] > Task :app:generateDebugBuildConfig
-[Wed Jul 28 17:07:13 PKT 2021][FINE] [SUB] > Task :app:compileDebugRenderscript NO-SOURCE
-[Wed Jul 28 17:07:13 PKT 2021][FINE] [SUB] > Task :app:javaPreCompileDebug
-[Wed Jul 28 17:07:14 PKT 2021][FINE] [SUB] > Task :app:generateDebugResValues
-[Wed Jul 28 17:07:14 PKT 2021][FINE] [SUB] > Task :app:generateDebugResources
-[Wed Jul 28 17:07:18 PKT 2021][FINE] [SUB] > Task :app:createDebugCompatibleScreenManifests
-[Wed Jul 28 17:07:19 PKT 2021][FINE] [SUB] > Task :app:mergeDebugResources
-[Wed Jul 28 17:07:19 PKT 2021][FINE] [SUB] > Task :app:extractDeepLinksDebug
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] > Task :app:processDebugMainManifest
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] [Storage.aar] /mnt/d/.my-gradle/caches/transforms-2/files-2.1/d2432daa5bb5223d8a1e951d1958b891/jetified-Storage/AndroidManifest.xml Warning:
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] 	Package name 'com.gluonhq.helloandroid' used in: Storage.aar, Util.aar.
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 17:07:20 PKT 2021][FINE] [SUB] > Task :app:processDebugManifest
-[Wed Jul 28 17:07:21 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
-[Wed Jul 28 17:07:21 PKT 2021][FINE] [SUB] > Task :app:processDebugManifestForPackage
-[Wed Jul 28 17:07:23 PKT 2021][FINE] [SUB] > Task :app:processDebugResources
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] > Task :app:compileDebugJavaWithJavac
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] Note: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/java/com/gluonhq/helloandroid/MainActivity.java uses or overrides a deprecated API.
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] Note: Recompile with -Xlint:deprecation for details.
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] > Task :app:compileDebugSources
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] > Task :app:mergeDebugShaders
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] > Task :app:compileDebugShaders NO-SOURCE
-[Wed Jul 28 17:07:30 PKT 2021][FINE] [SUB] > Task :app:generateDebugAssets UP-TO-DATE
-[Wed Jul 28 17:07:31 PKT 2021][FINE] [SUB] > Task :app:mergeDebugAssets
-[Wed Jul 28 17:07:31 PKT 2021][FINE] [SUB] > Task :app:processDebugJavaRes NO-SOURCE
-[Wed Jul 28 17:07:38 PKT 2021][FINE] [SUB] > Task :app:dexBuilderDebug
-[Wed Jul 28 17:07:38 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJavaResource
-[Wed Jul 28 17:07:38 PKT 2021][FINE] [SUB] > Task :app:desugarDebugFileDependencies
-[Wed Jul 28 17:07:38 PKT 2021][FINE] [SUB] > Task :app:checkDebugDuplicateClasses
-[Wed Jul 28 17:07:39 PKT 2021][FINE] [SUB] > Task :app:mergeLibDexDebug
-[Wed Jul 28 17:07:39 PKT 2021][FINE] [SUB] > Task :app:mergeProjectDexDebug
-[Wed Jul 28 17:07:41 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJniLibFolders
-[Wed Jul 28 17:07:41 PKT 2021][FINE] [SUB] > Task :app:mergeExtDexDebug
-[Wed Jul 28 17:07:41 PKT 2021][FINE] [SUB] > Task :app:validateSigningDebug
-[Wed Jul 28 17:07:45 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeLibs
-[Wed Jul 28 17:07:46 PKT 2021][FINE] [SUB] > Task :app:stripDebugDebugSymbols
-[Wed Jul 28 17:07:52 PKT 2021][FINE] [SUB] > Task :app:packageDebug
-[Wed Jul 28 17:07:52 PKT 2021][FINE] [SUB] > Task :app:assembleDebug
-[Wed Jul 28 17:07:52 PKT 2021][FINE] [SUB] 
-[Wed Jul 28 17:07:52 PKT 2021][FINE] [SUB] BUILD SUCCESSFUL in 1m 38s
-[Wed Jul 28 17:07:52 PKT 2021][FINE] [SUB] 25 actionable tasks: 25 executed
-[Wed Jul 28 17:07:53 PKT 2021][FINE] Result for package-task: 0
-[Wed Jul 28 17:07:53 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/build/outputs/apk/debug/app-debug.apk to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest.apk
-[Wed Jul 28 17:12:04 PKT 2021][INFO] ==================== RUN TASK ====================
-[Wed Jul 28 17:12:04 PKT 2021][FINE] PB Command for clearLog: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -c
-[Wed Jul 28 17:12:04 PKT 2021][FINE] Start process clearLog...
-[Wed Jul 28 17:12:04 PKT 2021][FINE] PB Command for run: /mnt/d/AndroidSDKLinux/platform-tools/adb shell monkey -p com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest 1
-[Wed Jul 28 17:12:04 PKT 2021][FINE] Start process run...
-[Wed Jul 28 17:12:04 PKT 2021][FINE] [SUB]   bash arg: -p
-[Wed Jul 28 17:12:04 PKT 2021][FINE] [SUB]   bash arg: com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest
-[Wed Jul 28 17:12:04 PKT 2021][FINE] [SUB]   bash arg: 1
-[Wed Jul 28 17:12:04 PKT 2021][FINE] Result for clearLog: 0
-[Wed Jul 28 17:12:04 PKT 2021][FINE] PB Command for log: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
-[Wed Jul 28 17:12:04 PKT 2021][FINE] Start process log...
-[Wed Jul 28 17:12:05 PKT 2021][INFO] [SUB] --------- beginning of main
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB] args: [-p, com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest, 1]
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB]  arg: "-p"
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB]  arg: "com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB]  arg: "1"
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB] data="com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB] Events injected: 1
-[Wed Jul 28 17:12:05 PKT 2021][FINE] [SUB] ## Network stats: elapsed time=87ms (0ms mobile, 0ms wifi, 87ms not connected)
-[Wed Jul 28 17:12:06 PKT 2021][FINE] Result for run: 0
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onCreate start, using Android Logging v1[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onCreate done[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onStart[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onStart done[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onResume[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onResume done[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceCreated for com.gluonhq.helloandroid.MainActivity@8f1c6ab[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): loading substrate library[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): AndroidVM called JNI_OnLoad, vm = 0x7644599380, androidEnv = 0x76445a03c0[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): loaded substrate library[0m
-[Wed Jul 28 17:12:06 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): nativeSetSurface called, env at 0x76445a03c0 and size 8, surface at 0x7ff723f8a8[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): native setSurface Ready, native window at 0x759dd32010[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): metrics = DisplayMetrics{density=2.0, width=720, height=1406, scaledDensity=2.0, xdpi=265.043, ydpi=268.613}, density = 2.0[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): SurfaceReady, surface at 0x7ff723f888[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): SurfaceReady, native window at 0x759dd32010[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): Surface created, native code informed about it, nativeWindow at 505159032848[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): We will now launch Graal in a separate thread[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): graalStarted true[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceCreated done[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): Start GraalApp, DALVIK env at 0x7548988c80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): PAGESIZE = 4096[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): EnvVersion = 65542[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): calling JavaMainWrapper_run with argsize: 22[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] --------- beginning of system
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceChanged start[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): [MainActivity] surfaceChanged, format = 4, width = 720, height = 1404[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): nativeSetSurface called, env at 0x76445a03c0 and size 8, surface at 0x7ff723f8b8[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): native setSurface Ready, native window at 0x759dd32010[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceChanged done, metrics = DisplayMetrics{density=2.0, width=720, height=1406, scaledDensity=2.0, xdpi=265.043, ydpi=268.613}, density = 2.0[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): SurfaceRedraw needed start[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): ask native graallayer to redraw surface[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Jul 28, 2021 5:12:06 PM com.sun.javafx.application.PlatformImpl startup[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @14b789f6'[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Prism pipeline init order: es2 [0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Using Double Precision Marlin Rasterizer[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Using dirty region optimizations[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Using system sized mask for primitives[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Not forcing power of 2 sizes for textures[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Using hardware CLAMP_TO_ZERO mode[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Opting in for HiDPI pixel scaling[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Prism pipeline name = com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Loading ES2 native library ... prism_es2_monocle[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): System.loadLibrary(prism_es2_monocle) succeeded[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	succeeded.[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): GLFactory using com.sun.prism.es2.MonocleGLFactory[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): In JNI_OnLoad_glass)monocle[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): System.loadLibrary(glass_monocle) succeeded[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): (X) Got class = class com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): JavaFX: using com.sun.javafx.tk.quantum.QuantumToolkit[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): traceEvent: Set MouseState[x=180,y=351,wheel=0,buttonsPressed=IntSet[]][0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum supported texture size: 16384[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum texture size clamped to 4096[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Non power of two texture support = true[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of vertex attributes = 32[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of uniform vertex components = 1024[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of uniform fragment components = 1024[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of varying components = 124[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of texture units usable in a vertex shader = 16[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Maximum number of texture units usable in a fragment shader = 16[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Graphics Vendor: Qualcomm[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067):        Renderer: Adreno (TM) 505[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067):         Version: OpenGL ES 3.2 V@0502.0 (GIT@03dd3ba, I13854cb805, 1603903465) (Date:10/28/20)[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067):  vsync: true vpipe: true[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Initializing native Util from OnLoad[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Init Util[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11118, existed? 0, dalvikEnv at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Util :: Load className com/gluonhq/helloandroid/Util[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11118, existed? 1, dalvikEnv at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GluonAttach(11067): Util <init>[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): DETACH_DALVIK, tid = 11118, existed = 1, env at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Dalvik Util init was called[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;40mI/GluonAttach(11067): JNI_OnLoad_storage called[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): [Storage Service] Initializing native Storage from OnLoad[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11118, existed? 1, dalvikEnv at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11118, existed? 1, dalvikEnv at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Util :: Load className com/gluonhq/helloandroid/DalvikStorageService[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): DETACH_DALVIK, tid = 11118, existed = 1, env at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11118, existed? 1, dalvikEnv at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GluonAttach(11067): Util <init>[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Calling Verify Permissions from Attach::Util[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): PermissionRequestActivity::Calling verifyPermissions[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): All requested permissions are granted[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Verify Permissions from native Attach::Util done[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): DETACH_DALVIK, tid = 11118, existed = 1, env at 0x754898aa80[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): In dummy JNI_OnLoad_javafx_font[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): System.loadLibrary(javafx_font) succeeded[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): System.loadLibrary(javafx_font_freetype) succeeded[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): File not found: /system/etc/system_fonts.xml[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceredraw needed part 1 done[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): surfaceredraw needed (and wait) done[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onPause[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): Dispatching lifecycle event from native Dalvik layer: pause[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Call Attach method from native Lifecycle: pause[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11067, existed? 1, dalvikEnv at 0x76445a03c0[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): DETACH_DALVIK, tid = 11067, existed = 1, env at 0x76445a03c0[0m
-[Wed Jul 28 17:12:07 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): called Attach method from native Lifecycle done[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11067): onStop[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11067): Dispatching lifecycle event from native Dalvik layer: stop[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): Call Attach method from native Lifecycle: stop[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): ATTACH_DALVIK, tid = 11067, existed? 1, dalvikEnv at 0x76445a03c0[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11067): DETACH_DALVIK, tid = 11067, existed = 1, env at 0x76445a03c0[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11067): called Attach method from native Lifecycle done[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): traceEvent: Set MouseState[x=-4,y=-4,wheel=0,buttonsPressed=IntSet[]][0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): Exception in thread "JavaFX Application Thread" java.lang.IllegalArgumentException: Both width and height must be >= 0[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at javafx.geometry.Rectangle2D.<init>(Rectangle2D.java:110)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at javafx.stage.Screen.nativeToScreen(Screen.java:150)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at javafx.stage.Screen.updateConfiguration(Screen.java:88)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at javafx.stage.Screen.lambda$static$0(Screen.java:74)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.javafx.tk.quantum.QuantumToolkit.notifyScreenListener(QuantumToolkit.java:756)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.javafx.tk.quantum.QuantumToolkit$4.handleSettingsChanged(QuantumToolkit.java:741)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.glass.ui.Screen.notifySettingsChanged(Screen.java:382)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.glass.ui.monocle.MonocleWindowManager$1.run(MonocleWindowManager.java:178)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at java.security.AccessController.doPrivileged(AccessController.java:105)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at java.lang.Thread.run(Thread.java:829)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.oracle.svm.core.thread.JavaThreads.threadStartRoutine(JavaThreads.java:552)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): 	at com.oracle.svm.core.posix.thread.PosixJavaThreads.pthreadStartRoutine(PosixJavaThreads.java:192)[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): max rectangle texture cell size = 89[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): wrap rectangle texture = 2 x 2[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): ES2ResourceFactory: Prism - createStockShader: AlphaTexture_Color.frag[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_LinearGradient_PAD.frag[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
-[Wed Jul 28 17:12:08 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11067): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
-[Wed Jul 28 17:12:45 PKT 2021][FINE] Result for log: 130
-[Wed Jul 28 17:12:51 PKT 2021][INFO] ==================== RUN TASK ====================
-[Wed Jul 28 17:12:51 PKT 2021][FINE] PB Command for clearLog: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -c
-[Wed Jul 28 17:12:51 PKT 2021][FINE] Start process clearLog...
-[Wed Jul 28 17:12:51 PKT 2021][FINE] PB Command for run: /mnt/d/AndroidSDKLinux/platform-tools/adb shell monkey -p com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest 1
-[Wed Jul 28 17:12:51 PKT 2021][FINE] Start process run...
-[Wed Jul 28 17:12:51 PKT 2021][FINE] Result for clearLog: 0
-[Wed Jul 28 17:12:51 PKT 2021][FINE] PB Command for log: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
-[Wed Jul 28 17:12:51 PKT 2021][FINE] Start process log...
-[Wed Jul 28 17:12:51 PKT 2021][FINE] [SUB]   bash arg: -p
-[Wed Jul 28 17:12:51 PKT 2021][FINE] [SUB]   bash arg: com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest
-[Wed Jul 28 17:12:51 PKT 2021][FINE] [SUB]   bash arg: 1
-[Wed Jul 28 17:12:52 PKT 2021][INFO] [SUB] --------- beginning of main
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB] args: [-p, com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest, 1]
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB]  arg: "-p"
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB]  arg: "com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB]  arg: "1"
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB] data="com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB] Events injected: 1
-[Wed Jul 28 17:12:52 PKT 2021][FINE] [SUB] ## Network stats: elapsed time=49ms (0ms mobile, 0ms wifi, 49ms not connected)
-[Wed Jul 28 17:12:52 PKT 2021][FINE] Result for run: 0
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onCreate start, using Android Logging v1[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onCreate done[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onStart[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onStart done[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onResume[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): onResume done[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceCreated for com.gluonhq.helloandroid.MainActivity@8f1c6ab[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): loading substrate library[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): AndroidVM called JNI_OnLoad, vm = 0x7644599380, androidEnv = 0x76445a03c0[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): loaded substrate library[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): nativeSetSurface called, env at 0x76445a03c0 and size 8, surface at 0x7ff723f8a8[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): native setSurface Ready, native window at 0x759dd31010[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): metrics = DisplayMetrics{density=2.0, width=720, height=1406, scaledDensity=2.0, xdpi=265.043, ydpi=268.613}, density = 2.0[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): SurfaceReady, surface at 0x7ff723f888[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): SurfaceReady, native window at 0x759dd31010[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): Surface created, native code informed about it, nativeWindow at 505159028752[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): We will now launch Graal in a separate thread[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): graalStarted true[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceCreated done[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): Start GraalApp, DALVIK env at 0x754898ac80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): PAGESIZE = 4096[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): EnvVersion = 65542[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): calling JavaMainWrapper_run with argsize: 22[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] --------- beginning of system
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceChanged start[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): [MainActivity] surfaceChanged, format = 4, width = 720, height = 1404[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): nativeSetSurface called, env at 0x76445a03c0 and size 8, surface at 0x7ff723f8b8[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): native setSurface Ready, native window at 0x759dd31010[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceChanged done, metrics = DisplayMetrics{density=2.0, width=720, height=1406, scaledDensity=2.0, xdpi=265.043, ydpi=268.613}, density = 2.0[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): SurfaceRedraw needed start[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): ask native graallayer to redraw surface[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Jul 28, 2021 5:12:53 PM com.sun.javafx.application.PlatformImpl startup[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): WARNING: Unsupported JavaFX configuration: classes were loaded from 'unnamed module @14b789f6'[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Prism pipeline init order: es2 [0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Using Double Precision Marlin Rasterizer[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Using dirty region optimizations[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Using system sized mask for primitives[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Not forcing power of 2 sizes for textures[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Using hardware CLAMP_TO_ZERO mode[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Opting in for HiDPI pixel scaling[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Prism pipeline name = com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Loading ES2 native library ... prism_es2_monocle[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): System.loadLibrary(prism_es2_monocle) succeeded[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	succeeded.[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): GLFactory using com.sun.prism.es2.MonocleGLFactory[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): In JNI_OnLoad_glass)monocle[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): System.loadLibrary(glass_monocle) succeeded[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): (X) Got class = class com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): JavaFX: using com.sun.javafx.tk.quantum.QuantumToolkit[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set MouseState[x=180,y=351,wheel=0,buttonsPressed=IntSet[]][0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum supported texture size: 16384[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum texture size clamped to 4096[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Non power of two texture support = true[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of vertex attributes = 32[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of uniform vertex components = 1024[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of uniform fragment components = 1024[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of varying components = 124[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of texture units usable in a vertex shader = 16[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Maximum number of texture units usable in a fragment shader = 16[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Graphics Vendor: Qualcomm[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541):        Renderer: Adreno (TM) 505[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541):         Version: OpenGL ES 3.2 V@0502.0 (GIT@03dd3ba, I13854cb805, 1603903465) (Date:10/28/20)[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541):  vsync: true vpipe: true[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Initializing native Util from OnLoad[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Init Util[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 0, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Util :: Load className com/gluonhq/helloandroid/Util[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 1, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GluonAttach(11541): Util <init>[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): DETACH_DALVIK, tid = 11577, existed = 1, env at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Dalvik Util init was called[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;40mI/GluonAttach(11541): JNI_OnLoad_storage called[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): [Storage Service] Initializing native Storage from OnLoad[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 1, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 1, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Util :: Load className com/gluonhq/helloandroid/DalvikStorageService[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): DETACH_DALVIK, tid = 11577, existed = 1, env at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 1, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GluonAttach(11541): Util <init>[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Calling Verify Permissions from Attach::Util[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): PermissionRequestActivity::Calling verifyPermissions[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): All requested permissions are granted[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GluonAttach(11541): Verify Permissions from native Attach::Util done[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): DETACH_DALVIK, tid = 11577, existed = 1, env at 0x754898ca80[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): In dummy JNI_OnLoad_javafx_font[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): System.loadLibrary(javafx_font) succeeded[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): WARNING: java.lang.UnsatisfiedLinkError[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): System.loadLibrary(javafx_font_freetype) succeeded[0m
-[Wed Jul 28 17:12:53 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): File not found: /system/etc/system_fonts.xml[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceredraw needed part 1 done[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): launcher, nativeSurfaceRedrawNeeded called. Invoke method on glass_monocle[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): surfaceredraw needed (and wait) done[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set MouseState[x=180,y=351,wheel=0,buttonsPressed=IntSet[]][0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): max rectangle texture cell size = 89[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): wrap rectangle texture = 2 x 2[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): ES2ResourceFactory: Prism - createStockShader: AlphaTexture_Color.frag[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_Color.frag[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): ES2ResourceFactory: Prism - createStockShader: FillRoundRect_LinearGradient_PAD.frag[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag[0m
-[Wed Jul 28 17:12:54 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): Activity, get touch event, pcount = 1[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): View wasn't focused, requesting focus[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): Native Dalvik layer got touch event, pass to native Graal layer...[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): Native Dalvik layer got touch event, passed to native Graal layer...[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): [MON] Create device[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): [MON] Create device done, add done[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Pushing TouchState[1,TouchState.Point[id=0,x=225,y=34]] to TouchPipeline[SmallMove][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Applying SmallMove to TouchState[1,TouchState.Point[id=0,x=225,y=34]][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set TouchState[1,TouchState.Point[id=0,x=225,y=34]][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set MouseState[x=225,y=34,wheel=0,buttonsPressed=IntSet[212]][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(11541): Activity, get touch event, pcount = 1[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): Native Dalvik layer got touch event, pass to native Graal layer...[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;196mE/GraalGluon(11541): Native Dalvik layer got touch event, passed to native Graal layer...[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): don't add points, primary = -1[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Pushing TouchState[0] to TouchPipeline[SmallMove][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Applying SmallMove to TouchState[0][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set TouchState[0][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): traceEvent: Set MouseState[x=225,y=34,wheel=0,buttonsPressed=IntSet[]][0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Jul 28, 2021 5:12:56 PM org.hsqldb.persist.Logger logSevereEvent[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): SEVERE: could not reopen database[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@2f1bbba9[file =/storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck, exists=false, locked=false, valid=false, ] method: openRAF reason: java.io.FileNotFoundException: /storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck (Operation not permitted)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.error.Error.error(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.error.Error.error(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.Logger.open(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.Database.reopen(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.Database.open(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.DatabaseManager.newSession(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.sql.DriverManager.getConnection(DriverManager.java:677)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.sql.DriverManager.getConnection(DriverManager.java:228)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.maqboolsolutions.hsqldbgraalvmtest.Main.lambda$start$0(Main.java:64)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Node.fireEvent(Node.java:8792)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.control.Button.fire(Button.java:203)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$MouseHandler.process(Scene.java:3880)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene.processMouseEvent(Scene.java:1873)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2606)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.security.AccessController.doPrivileged(AccessController.java:105)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:423)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.handleMouseEvent(View.java:557)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.notifyMouse(View.java:943)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.notifyMouse(MouseInput.java:328)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.lambda$postMouseEvent$3(MouseInput.java:241)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.lang.Thread.run(Thread.java:829)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.thread.JavaThreads.threadStartRoutine(JavaThreads.java:552)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.posix.thread.PosixJavaThreads.pthreadStartRoutine(PosixJavaThreads.java:192)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): [0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@2f1bbba9[file =/storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck, exists=false, locked=false, valid=false, ] method: openRAF reason: java.io.FileNotFoundException: /storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck (Operation not permitted)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.sql.DriverManager.getConnection(DriverManager.java:677)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.sql.DriverManager.getConnection(DriverManager.java:228)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.maqboolsolutions.hsqldbgraalvmtest.Main.lambda$start$0(Main.java:64)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Node.fireEvent(Node.java:8792)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.control.Button.fire(Button.java:203)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$MouseHandler.process(Scene.java:3880)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene.processMouseEvent(Scene.java:1873)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2606)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.security.AccessController.doPrivileged(AccessController.java:105)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:423)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.handleMouseEvent(View.java:557)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.notifyMouse(View.java:943)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.notifyMouse(MouseInput.java:328)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.lambda$postMouseEvent$3(MouseInput.java:241)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.lang.Thread.run(Thread.java:829)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.thread.JavaThreads.threadStartRoutine(JavaThreads.java:552)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.posix.thread.PosixJavaThreads.pthreadStartRoutine(PosixJavaThreads.java:192)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@2f1bbba9[file =/storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck, exists=false, locked=false, valid=false, ] method: openRAF reason: java.io.FileNotFoundException: /storage/emulated/0/Document/HsqlDb Database/hsqldb-database.lck (Operation not permitted)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.error.Error.error(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.error.Error.error(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.persist.Logger.open(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.Database.reopen(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.Database.open(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at org.hsqldb.DatabaseManager.newSession(Unknown Source)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	... 56 more[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): ATTACH_DALVIK, tid = 11577, existed? 1, dalvikEnv at 0x754898ca80[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalGluon(11541): DETACH_DALVIK, tid = 11577, existed = 1, env at 0x754898ca80[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): Exception in thread "JavaFX Application Thread" java.lang.NullPointerException[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.maqboolsolutions.hsqldbgraalvmtest.Main.lambda$start$0(Main.java:83)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Node.fireEvent(Node.java:8792)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.control.Button.fire(Button.java:203)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:208)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.scene.control.inputmap.InputMap.handle(InputMap.java:274)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:247)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:234)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.event.Event.fireEvent(Event.java:198)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$MouseHandler.process(Scene.java:3880)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene.processMouseEvent(Scene.java:1873)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2606)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:411)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:301)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.security.AccessController.doPrivileged(AccessController.java:105)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$2(GlassViewEventHandler.java:450)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:423)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:449)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.handleMouseEvent(View.java:557)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.View.notifyMouse(View.java:943)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.notifyMouse(MouseInput.java:328)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.MouseInput.lambda$postMouseEvent$3(MouseInput.java:241)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at java.lang.Thread.run(Thread.java:829)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.thread.JavaThreads.threadStartRoutine(JavaThreads.java:552)[0m
-[Wed Jul 28 17:12:57 PKT 2021][INFO] [SUB] [38;5;75mD/GraalCompiled(11541): 	at com.oracle.svm.core.posix.thread.PosixJavaThreads.pthreadStartRoutine(PosixJavaThreads.java:192)[0m
-[Wed Jul 28 17:14:34 PKT 2021][FINE] Result for log: 130
-[Wed Jul 28 17:14:34 PKT 2021][SEVERE] Process log failed with result: 130
-Check the log files under /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/log
-And please check https://docs.gluonhq.com/ for more information.
+[Thu Jul 29 09:18:27 PKT 2021][INFO] ==================== COMPILE TASK ====================
+[Thu Jul 29 09:18:32 PKT 2021][FINE] PB Command for check version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java -version
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Start process check version...
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] openjdk version "11.0.11" 2021-04-20
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Result for check version: 0
+[Thu Jul 29 09:18:32 PKT 2021][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Extracting native libs to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib
+[Thu Jul 29 09:18:32 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libstorage.a:
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] storage.o:     file format elf64-littleaarch64
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 09:18:32 PKT 2021][FINE] PB Command for objdump: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/objdump -f /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Start process objdump...
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] In archive /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/lib/libutil.a:
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] util.o:     file format elf64-littleaarch64
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] architecture: aarch64, flags 0x00000011:
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] HAS_RELOC, HAS_SYMS
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] start address 0x0000000000000000
+[Thu Jul 29 09:18:32 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Result for objdump: 0
+[Thu Jul 29 09:18:32 PKT 2021][FINE] Looking for resource: /native/android/c/launcher.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/touch_events.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/logger.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid.h
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Thu Jul 29 09:18:33 PKT 2021][FINE] PB Command for compile-additional-sources: /mnt/d/AndroidSDKLinux/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c logger.c
+[Thu Jul 29 09:18:33 PKT 2021][FINE] Start process compile-additional-sources...
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] launcher.c:52:12: warning: 'extern' variable has an initializer [-Wextern-initializer]
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] extern int __svm_vm_is_static_binary __attribute__((weak)) = 1;
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]            ^
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] 1 warning generated.
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] javafx_adapter.c:114:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] javafx_adapter.c:135:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     ATTACH_DALVIK();
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] ./grandroid_ext.h:81:56: note: expanded from macro 'ATTACH_DALVIK'
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Thu Jul 29 09:18:35 PKT 2021][FINE] [SUB] 2 warnings generated.
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Result for compile-additional-sources: 0
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes16918191760763234690/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes16918191760763234690/log4j.xml
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes16918191760763234690/META-INF/native-image/reflect-config.json
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes16918191760763234690/META-INF/native-image/resource-config.json
+[Thu Jul 29 09:18:35 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes16918191760763234690/classes.jar -C /tmp/classes16918191760763234690 .
+[Thu Jul 29 09:18:35 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning for init build time files
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /tmp/classes16918191760763234690/classes.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning for reflection files
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /tmp/classes16918191760763234690/classes.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning for JNI files
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /tmp/classes16918191760763234690/classes.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning for resource files
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Scanning /tmp/classes16918191760763234690/classes.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/ not found. Trying to create a new FileSystem instead.
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Created FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/: /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes6046593649422843782/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes6046593649422843782/log4j.xml
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes6046593649422843782/META-INF/native-image/reflect-config.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes6046593649422843782/META-INF/native-image/resource-config.json
+[Thu Jul 29 09:18:36 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes6046593649422843782/classes.jar -C /tmp/classes6046593649422843782 .
+[Thu Jul 29 09:18:36 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning for resource bundles
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Adding classes from /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar::META-INF/substrate/config/resourcebundles
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Scanning /tmp/classes6046593649422843782/classes.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11-android.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/storage-4.0.11.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11-android.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/util-4.0.11.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/log4j-1.2.17.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.base.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.base.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.controls.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.controls.jar
+[Thu Jul 29 09:18:37 PKT 2021][FINE] Copied resource /home/maqboolstudiopc/.gluon/substrate/javafxStaticSdk/17-ea+14/android-aarch64/sdk/lib/javafx.graphics.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/javafx.graphics.jar
+[Thu Jul 29 09:18:38 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:18:38 PKT 2021][FINE] Copied resource /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/deps/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:38 PKT 2021][FINE] Class-Path manifest entry for pathing jar: ../../../../classes deps/storage-4.0.11-android.jar deps/storage-4.0.11.jar deps/util-4.0.11-android.jar deps/util-4.0.11.jar deps/log4j-1.2.17.jar deps/hsqldb-2.6.0-jdk6.jar deps/javafx.base.jar deps/javafx.controls.jar deps/javafx.graphics.jar deps/slf4j-api-1.7.30.jar deps/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:18:38 PKT 2021][FINE] Pathing jar created at /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar
+[Thu Jul 29 09:18:38 PKT 2021][FINE] PB Command for compile: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
+[Thu Jul 29 09:18:38 PKT 2021][FINE] Start process compile...
+[Thu Jul 29 09:18:40 PKT 2021][INFO] [SUB] Warning: Ignoring server-mode native-image argument --no-server.
+[Thu Jul 29 09:18:50 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]    classlist:   6,785.54 ms,  0.96 GB
+[Thu Jul 29 09:18:53 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]        (cap):     423.34 ms,  0.96 GB
+[Thu Jul 29 09:18:55 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]        setup:   4,555.01 ms,  0.96 GB
+[Thu Jul 29 09:20:56 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]     (clinit):   1,619.52 ms,  4.16 GB
+[Thu Jul 29 09:20:57 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]   (typeflow):  64,651.52 ms,  4.16 GB
+[Thu Jul 29 09:20:57 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]    (objects):  44,587.84 ms,  4.16 GB
+[Thu Jul 29 09:20:57 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]   (features):   7,511.98 ms,  4.16 GB
+[Thu Jul 29 09:20:57 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]     analysis: 120,746.99 ms,  4.16 GB
+[Thu Jul 29 09:21:02 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]     universe:   5,317.30 ms,  4.16 GB
+[Thu Jul 29 09:21:30 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]      (parse):  27,324.38 ms,  5.11 GB
+[Thu Jul 29 09:21:59 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]     (inline):  28,299.72 ms,  5.04 GB
+[Thu Jul 29 09:23:09 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]    (compile):  69,788.54 ms,  6.05 GB
+[Thu Jul 29 09:23:14 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]      compile: 132,021.04 ms,  6.05 GB
+[Thu Jul 29 09:23:27 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]        image:  12,410.70 ms,  5.94 GB
+[Thu Jul 29 09:23:44 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]        write:  17,437.57 ms,  5.86 GB
+[Thu Jul 29 09:23:44 PKT 2021][INFO] [SUB] [com.maqboolsolutions.hsqldbgraalvmtest.main:269]      [total]: 300,571.23 ms,  5.86 GB
+[Thu Jul 29 09:23:44 PKT 2021][INFO] [SUB] # Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+[Thu Jul 29 09:23:48 PKT 2021][FINE] Result for compile: 0
+[Thu Jul 29 09:23:49 PKT 2021][FINE] Logging process [compile] to file: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/log/process-compile-1627532629117.log
+[Thu Jul 29 09:23:53 PKT 2021][FINE] PB Command for java-version: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/java --version
+[Thu Jul 29 09:23:53 PKT 2021][FINE] Start process java-version...
+[Thu Jul 29 09:23:56 PKT 2021][FINE] [SUB] openjdk 11.0.11 2021-04-20
+[Thu Jul 29 09:23:56 PKT 2021][FINE] [SUB] OpenJDK Runtime Environment GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02)
+[Thu Jul 29 09:23:56 PKT 2021][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 21.2.0-dev (build 11.0.11+8-jvmci-21.2-b02, mixed mode, sharing)
+[Thu Jul 29 09:23:56 PKT 2021][FINE] Result for java-version: 0
+[Thu Jul 29 09:24:19 PKT 2021][INFO] ==================== PACKAGE TASK ====================
+[Thu Jul 29 09:24:19 PKT 2021][FINE] FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/ not found. Trying to create a new FileSystem instead.
+[Thu Jul 29 09:24:19 PKT 2021][FINE] Created FileSystem for resource jar:file:/mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar!/com/gluonhq/substrate/: /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.43/substrate-0.0.43.jar
+[Thu Jul 29 09:24:24 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes17271603551288019432/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 09:24:24 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes17271603551288019432/log4j.xml
+[Thu Jul 29 09:24:24 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes17271603551288019432/META-INF/native-image/reflect-config.json
+[Thu Jul 29 09:24:24 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes17271603551288019432/META-INF/native-image/resource-config.json
+[Thu Jul 29 09:24:24 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes17271603551288019432/classes.jar -C /tmp/classes17271603551288019432 .
+[Thu Jul 29 09:24:24 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning for android dependencies files
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:24:27 PKT 2021][FINE] Scanning /tmp/classes17271603551288019432/classes.jar
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-hdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-hdpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-ldpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-ldpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-mdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-mdpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/src/android/res/mipmap-xxxhdpi/ic_launcher.png to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes17911352225606705366/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes17911352225606705366/log4j.xml
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes17911352225606705366/META-INF/native-image/reflect-config.json
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes17911352225606705366/META-INF/native-image/resource-config.json
+[Thu Jul 29 09:24:28 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes17911352225606705366/classes.jar -C /tmp/classes17911352225606705366 .
+[Thu Jul 29 09:24:28 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Scanning for dalvik classes
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/com/maqboolsolutions/hsqldbgraalvmtest/Main.class to /tmp/classes6858668067849292810/com/maqboolsolutions/hsqldbgraalvmtest/Main.class
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/log4j.xml to /tmp/classes6858668067849292810/log4j.xml
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/reflect-config.json to /tmp/classes6858668067849292810/META-INF/native-image/reflect-config.json
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/classes/META-INF/native-image/resource-config.json to /tmp/classes6858668067849292810/META-INF/native-image/resource-config.json
+[Thu Jul 29 09:24:29 PKT 2021][FINE] PB Command for jar: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar cf /tmp/classes6858668067849292810/classes.jar -C /tmp/classes6858668067849292810 .
+[Thu Jul 29 09:24:29 PKT 2021][FINE] Start process jar...
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Result for jar: 0
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11-android.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/storage/4.0.11/storage-4.0.11.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /home/maqboolstudiopc/.m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11-android.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/com/gluonhq/attach/util/4.0.11/util-4.0.11.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/hsqldb/hsqldb/2.6.0-jdk6/hsqldb-2.6.0-jdk6.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16-linux.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-base/16/javafx-base-16.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16-linux.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-controls/16/javafx-controls-16.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16-linux.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/openjfx/javafx-graphics/16/javafx-graphics-16.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar
+[Thu Jul 29 09:24:30 PKT 2021][FINE] Scanning /mnt/d/.my-m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar
+[Thu Jul 29 09:24:31 PKT 2021][FINE] Scanning /tmp/classes6858668067849292810/classes.jar
+[Thu Jul 29 09:24:31 PKT 2021][FINE] PB Command for merge-dalvik-classes: /mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/jar -cvf ../additional_classes.jar .
+[Thu Jul 29 09:24:31 PKT 2021][FINE] Start process merge-dalvik-classes...
+[Thu Jul 29 09:24:31 PKT 2021][FINE] [SUB] added manifest
+[Thu Jul 29 09:24:32 PKT 2021][FINE] Result for merge-dalvik-classes: 0
+[Thu Jul 29 09:24:32 PKT 2021][FINE] PB Command for package-task: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/gradlew -p /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project assembleDebug
+[Thu Jul 29 09:24:32 PKT 2021][FINE] Start process package-task...
+[Thu Jul 29 09:24:46 PKT 2021][FINE] [SUB] To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/6.4.1/userguide/gradle_daemon.html.
+[Thu Jul 29 09:24:54 PKT 2021][FINE] [SUB] Daemon will be stopped at the end of the build stopping after processing
+[Thu Jul 29 09:25:36 PKT 2021][FINE] [SUB] > Task :app:preBuild UP-TO-DATE
+[Thu Jul 29 09:25:36 PKT 2021][FINE] [SUB] > Task :app:preDebugBuild UP-TO-DATE
+[Thu Jul 29 09:25:37 PKT 2021][FINE] [SUB] > Task :app:compileDebugAidl NO-SOURCE
+[Thu Jul 29 09:25:37 PKT 2021][FINE] [SUB] > Task :app:generateDebugBuildConfig
+[Thu Jul 29 09:25:37 PKT 2021][FINE] [SUB] > Task :app:compileDebugRenderscript NO-SOURCE
+[Thu Jul 29 09:25:37 PKT 2021][FINE] [SUB] > Task :app:javaPreCompileDebug
+[Thu Jul 29 09:25:38 PKT 2021][FINE] [SUB] > Task :app:generateDebugResValues
+[Thu Jul 29 09:25:38 PKT 2021][FINE] [SUB] > Task :app:generateDebugResources
+[Thu Jul 29 09:25:41 PKT 2021][FINE] [SUB] > Task :app:createDebugCompatibleScreenManifests
+[Thu Jul 29 09:25:41 PKT 2021][FINE] [SUB] > Task :app:extractDeepLinksDebug
+[Thu Jul 29 09:25:42 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:25:42 PKT 2021][FINE] [SUB] > Task :app:processDebugMainManifest
+[Thu Jul 29 09:25:42 PKT 2021][FINE] [SUB] [Storage.aar] /mnt/d/.my-gradle/caches/transforms-2/files-2.1/d2432daa5bb5223d8a1e951d1958b891/jetified-Storage/AndroidManifest.xml Warning:
+[Thu Jul 29 09:25:42 PKT 2021][FINE] [SUB] 	Package name 'com.gluonhq.helloandroid' used in: Storage.aar, Util.aar.
+[Thu Jul 29 09:25:44 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:25:44 PKT 2021][FINE] [SUB] > Task :app:processDebugManifest
+[Thu Jul 29 09:25:44 PKT 2021][FINE] [SUB] > Task :app:mergeDebugResources
+[Thu Jul 29 09:25:44 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+[Thu Jul 29 09:25:44 PKT 2021][FINE] [SUB] > Task :app:processDebugManifestForPackage
+[Thu Jul 29 09:25:47 PKT 2021][FINE] [SUB] > Task :app:processDebugResources
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:compileDebugJavaWithJavac
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] Note: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/src/main/java/com/gluonhq/helloandroid/MainActivity.java uses or overrides a deprecated API.
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] Note: Recompile with -Xlint:deprecation for details.
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:compileDebugSources
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:mergeDebugShaders
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:compileDebugShaders NO-SOURCE
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:generateDebugAssets UP-TO-DATE
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:mergeDebugAssets
+[Thu Jul 29 09:25:51 PKT 2021][FINE] [SUB] > Task :app:processDebugJavaRes NO-SOURCE
+[Thu Jul 29 09:25:55 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJavaResource
+[Thu Jul 29 09:25:59 PKT 2021][FINE] [SUB] > Task :app:dexBuilderDebug
+[Thu Jul 29 09:25:59 PKT 2021][FINE] [SUB] > Task :app:checkDebugDuplicateClasses
+[Thu Jul 29 09:25:59 PKT 2021][FINE] [SUB] > Task :app:mergeLibDexDebug
+[Thu Jul 29 09:26:00 PKT 2021][FINE] [SUB] > Task :app:desugarDebugFileDependencies
+[Thu Jul 29 09:26:01 PKT 2021][FINE] [SUB] > Task :app:mergeDebugJniLibFolders
+[Thu Jul 29 09:26:01 PKT 2021][FINE] [SUB] > Task :app:mergeExtDexDebug
+[Thu Jul 29 09:26:01 PKT 2021][FINE] [SUB] > Task :app:validateSigningDebug
+[Thu Jul 29 09:26:01 PKT 2021][FINE] [SUB] > Task :app:mergeProjectDexDebug
+[Thu Jul 29 09:26:05 PKT 2021][FINE] [SUB] > Task :app:mergeDebugNativeLibs
+[Thu Jul 29 09:26:07 PKT 2021][FINE] [SUB] > Task :app:stripDebugDebugSymbols
+[Thu Jul 29 09:26:11 PKT 2021][FINE] [SUB] > Task :app:packageDebug
+[Thu Jul 29 09:26:11 PKT 2021][FINE] [SUB] > Task :app:assembleDebug
+[Thu Jul 29 09:26:11 PKT 2021][FINE] [SUB] 
+[Thu Jul 29 09:26:11 PKT 2021][FINE] [SUB] BUILD SUCCESSFUL in 1m 35s
+[Thu Jul 29 09:26:11 PKT 2021][FINE] [SUB] 25 actionable tasks: 25 executed
+[Thu Jul 29 09:26:12 PKT 2021][FINE] Result for package-task: 0
+[Thu Jul 29 09:26:12 PKT 2021][FINE] Copied resource /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/android_project/app/build/outputs/apk/debug/app-debug.apk to /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest.apk
+[Thu Jul 29 09:44:14 PKT 2021][INFO] ==================== RUN TASK ====================
+[Thu Jul 29 09:44:14 PKT 2021][FINE] PB Command for clearLog: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -c
+[Thu Jul 29 09:44:14 PKT 2021][FINE] Start process clearLog...
+[Thu Jul 29 09:44:14 PKT 2021][FINE] PB Command for run: /mnt/d/AndroidSDKLinux/platform-tools/adb shell monkey -p com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest 1
+[Thu Jul 29 09:44:14 PKT 2021][FINE] Start process run...
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]   bash arg: -p
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]   bash arg: com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]   bash arg: 1
+[Thu Jul 29 09:44:15 PKT 2021][FINE] Result for clearLog: 0
+[Thu Jul 29 09:44:15 PKT 2021][FINE] PB Command for log: /mnt/d/AndroidSDKLinux/platform-tools/adb logcat -v brief -v color GraalCompiled:V GraalActivity:V GraalGluon:V GluonAttach:V AndroidRuntime:E ActivityManager:W *:S
+[Thu Jul 29 09:44:15 PKT 2021][FINE] Start process log...
+[Thu Jul 29 09:44:15 PKT 2021][INFO] [SUB] --------- beginning of main
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB] args: [-p, com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest, 1]
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]  arg: "-p"
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]  arg: "com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB]  arg: "1"
+[Thu Jul 29 09:44:15 PKT 2021][FINE] [SUB] data="com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest"
+[Thu Jul 29 09:44:16 PKT 2021][FINE] [SUB] Events injected: 1
+[Thu Jul 29 09:44:16 PKT 2021][FINE] [SUB] ## Network stats: elapsed time=140ms (0ms mobile, 0ms wifi, 140ms not connected)
+[Thu Jul 29 09:44:16 PKT 2021][FINE] Result for run: 0
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onCreate start, using Android Logging v1[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onCreate done[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onStart[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onStart done[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onResume[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): onResume done[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): surfaceCreated for com.gluonhq.helloandroid.MainActivity@8f1c6ab[0m
+[Thu Jul 29 09:44:16 PKT 2021][INFO] [SUB] [38;5;231mV/GraalActivity(19632): loading substrate library[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] --------- beginning of crash
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): FATAL EXCEPTION: main[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): Process: com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest, PID: 19632[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "JNI_OnLoad_awt" referenced by "/data/app/~~ySAMTz_BRuG3hf0ioN_Hlw==/com.maqboolsolutions.HSQLDbOnGraalVMNativeImageTest-DWGgBp_MoA4FsRHyKUPv3Q==/lib/arm64/libsubstrate.so"...[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at java.lang.Runtime.loadLibrary0(Runtime.java:1087)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at java.lang.Runtime.loadLibrary0(Runtime.java:1008)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at java.lang.System.loadLibrary(System.java:1664)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at com.gluonhq.helloandroid.MainActivity.surfaceCreated(MainActivity.java:104)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.SurfaceView.updateSurface(SurfaceView.java:1275)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.SurfaceView.lambda$new$0$SurfaceView(SurfaceView.java:196)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.-$$Lambda$SurfaceView$w68OV7dB_zKVNsA-r0IrAUtyWas.onPreDraw(Unknown Source:2)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:1111)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:3402)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2181)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:8647)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:1031)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.Choreographer.doCallbacks(Choreographer.java:849)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.Choreographer.doFrame(Choreographer.java:779)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.view.Choreographer$FrameHandler.handleMessage(Choreographer.java:954)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.os.Handler.dispatchMessage(Handler.java:106)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.os.Looper.loop(Looper.java:239)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at android.app.ActivityThread.main(ActivityThread.java:8212)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at java.lang.reflect.Method.invoke(Native Method)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)[0m
+[Thu Jul 29 09:44:17 PKT 2021][INFO] [SUB] [38;5;196mE/AndroidRuntime(19632): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1016)[0m
+[Thu Jul 29 09:44:31 PKT 2021][FINE] Result for log: 130

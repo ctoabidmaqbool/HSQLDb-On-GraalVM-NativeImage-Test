@@ -7,6 +7,56 @@
   ]
 },
 {
+  "name":"org.apache.log4j.AppenderSkeleton",
+  "allPublicMethods":true
+},
+{
+  "name":"org.apache.log4j.Category",
+  "methods":[{"name":"log","parameterTypes":["java.lang.String","org.apache.log4j.Priority","java.lang.Object","java.lang.Throwable"] }]
+},
+{
+  "name":"org.apache.log4j.CategoryKey"
+},
+{
+  "name":"org.apache.log4j.ConsoleAppender",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.log4j.Layout",
+  "allPublicMethods":true
+},
+{
+  "name":"org.apache.log4j.Level",
+  "methods":[{"name":"toLevel","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.apache.log4j.Logger",
+  "methods":[{"name":"getLogger","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.apache.log4j.PatternLayout",
+  "allPublicMethods":true,
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.log4j.Priority"
+},
+{
+  "name":"org.apache.log4j.WriterAppender",
+  "allPublicMethods":true
+},
+{
+  "name":"org.apache.log4j.helpers.Loader"
+},
+{
+  "name":"org.apache.log4j.spi.Configurator"
+},
+{
+  "name":"org.apache.log4j.xml.DOMConfigurator",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"org.hsqldb.Constraint[]"
 },
 {
