@@ -1,0 +1,33 @@
+Process
+=======
+compile
+
+Command Line
+============
+/mnt/d/Programs/graalvm-svm-linux-gluon-21.2.0-dev/bin/native-image -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 -H:+RemoveSaturatedTypeFlows --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+ForceNoROSectionRelocations --libc=bionic -H:+UseCAPCache -H:CAPCacheDir=/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/capcache -H:CompilerBackend=lir -H:IncludeResourceBundles=com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /mnt/d/.my-m2/repository/com/gluonhq/substrate/0.0.44-SNAPSHOT/substrate-0.0.44-SNAPSHOT.jar:/mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/tmp/classpathJar.jar com.maqboolsolutions.hsqldbgraalvmtest.Main
+
+Output
+======
+Warning: Ignoring server-mode native-image argument --no-server.
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]    classlist:   4,745.81 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]        (cap):     449.30 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]        setup:   4,618.04 ms,  0.96 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]     (clinit):   1,585.23 ms,  4.12 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]   (typeflow): 133,603.37 ms,  4.12 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]    (objects):  61,604.04 ms,  4.12 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]   (features):  10,628.61 ms,  4.12 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]     analysis: 210,294.76 ms,  4.12 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]     universe:   6,014.83 ms,  4.05 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]      (parse):   7,610.33 ms,  4.10 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]     (inline):  42,570.84 ms,  4.95 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]    (compile):  95,359.94 ms,  5.26 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]      compile: 152,874.06 ms,  5.26 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]        image:  54,171.93 ms,  5.27 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]        write:  27,527.64 ms,  5.27 GB
+[com.maqboolsolutions.hsqldbgraalvmtest.main:1408]      [total]: 462,062.01 ms,  5.27 GB
+# Printing build artifacts to: /mnt/d/NetBeansProjects/git-projects/HSQLDb-On-GraalVM-NativeImage-Test/target/gluonfx/aarch64-android/gvm/HSQLDbOnGraalVMNativeImageTest/com.maqboolsolutions.hsqldbgraalvmtest.main.build_artifacts.txt
+
+
+Result
+======
+result: 0
