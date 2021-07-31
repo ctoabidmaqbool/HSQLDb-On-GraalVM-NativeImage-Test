@@ -17,7 +17,7 @@
 
         <javafx.version>16</javafx.version>
         <javafx.maven.plugin.version>0.0.6</javafx.maven.plugin.version>
-        <gluonfx.maven.plugin.version>1.0.3</gluonfx.maven.plugin.version>
+        <gluonfx.maven.plugin.version>1.0.4-SNAPSHOT</gluonfx.maven.plugin.version>
         <attach.version>4.0.11</attach.version>
 
         <main.class>com.maqboolsolutions.hsqldbgraalvmtest.Main</main.class>
@@ -38,6 +38,12 @@
             <groupId>com.gluonhq.attach</groupId>
             <artifactId>util</artifactId>
             <version>${attach.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.30</version>
         </dependency>
     </dependencies>
 
@@ -73,6 +79,8 @@
 <!--                        <arg>-H:IncludeResourceBundles=org.hsqldb.resources.sql-state-messages</arg>-->
                     </nativeImageArgs>
                     <reflectionList>
+                        <list>org.apache.log4j.helpers.Loader</list>
+                        <list>java.lang.Throwable</list>
 <!--                        <list>org.hsqldb.jdbc.JDBCDriver</list>-->
 <!--                        <list>org.hsqldb.dbinfo.DatabaseInformationFull</list>-->
 <!--                        <list>org.hsqldb.lib.FileUtil</list> &lt;!&ndash;hsqldb 2.5.1 -> Android&ndash;&gt;-->
@@ -129,4 +137,10 @@
         </profile>
     </profiles>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Snapshots</id>
+            <url>http://oss.sonatype.org/content/repositories/snapshots/</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
